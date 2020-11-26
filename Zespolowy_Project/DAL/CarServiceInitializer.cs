@@ -11,6 +11,7 @@ namespace Zespolowy_Project.DAL
     {
         protected override void Seed(CarServiceContext context)
         {
+
             var cars = new List<Car> {
 
                 new Car{ OwnerName = "Jan Kowalski", OwnerAddress = "Siedlce ul. 3 maja 55", RegistrationDate = new DateTime(2020, 11, 20, 15, 30, 00), Mileage = 250000, NumerPlate = "KDA2877" },

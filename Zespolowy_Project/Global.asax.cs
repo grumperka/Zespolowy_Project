@@ -22,6 +22,7 @@ namespace Zespolowy_Project
             BundleConfig.RegisterBundles(BundleTable.Bundles);
 
             Database.SetInitializer(new CarServiceInitializer());
+
         }
     }
 }
