@@ -21,7 +21,11 @@ namespace Zespolowy_Project
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
 
-            Database.SetInitializer(new CarServiceInitializer());
+            //Database.SetInitializer(new CarServiceInitializer());
+            using (var context = new CarServiceContext())
+            {
+                context.Database.Initialize(force: true);
+            }
 
         }
     }

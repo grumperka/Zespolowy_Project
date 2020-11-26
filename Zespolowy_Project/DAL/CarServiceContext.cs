@@ -10,7 +10,7 @@ namespace Zespolowy_Project.DAL
 {
     public class CarServiceContext : DbContext
     {
-        public CarServiceContext() : base ("Database_Zespolowy")
+        public CarServiceContext() : base ("ZespolowyConnection")
         {
         }
 

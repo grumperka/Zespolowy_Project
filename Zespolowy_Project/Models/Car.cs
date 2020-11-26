@@ -19,6 +19,7 @@ namespace Projekt_Zespolowy.Models
         public string OwnerAddress { get; set; }
 
         [Required]
+        [DataType(DataType.Date)]
         public DateTime RegistrationDate { get; set; }
 
         [Required]
@@ -27,5 +28,6 @@ namespace Projekt_Zespolowy.Models
 
         [Required]
         public int Mileage { get; set; }
+
     }
 }

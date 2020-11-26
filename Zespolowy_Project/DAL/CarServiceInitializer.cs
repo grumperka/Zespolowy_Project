@@ -45,7 +45,7 @@ namespace Zespolowy_Project.DAL
                 new CarRepair { RepairDescryption = "Wymiana akumulatora.", RepairStartDate = new DateTime(2020, 11, 15, 14, 15, 00), RepairEndDate = new DateTime(2020, 11, 16, 10, 15, 00), ManHours = 5, Cost = 500, Car = cars[1], CarId = cars[1].Id, CarService = carServices[1], CarServiceId = carServices[1].Id  },
                 new CarRepair { RepairDescryption = "Piaskowanie.", RepairStartDate = new DateTime(2020, 11, 18, 14, 15, 00), RepairEndDate = new DateTime(2020, 11, 19, 19, 15, 00), ManHours = 8, Cost = 700, Car = cars[2], CarId = cars[2].Id, CarService = carServices[2], CarServiceId = carServices[2].Id },
                 new CarRepair { RepairDescryption = "Wodorowanie silnika.", RepairStartDate = new DateTime(2020, 11, 19, 10, 00, 00), RepairEndDate = new DateTime(2020, 11, 20, 10, 00, 00), ManHours = 7, Cost = 600, Car = cars[3], CarId = cars[3].Id, CarService = carServices[3], CarServiceId = carServices[3].Id },
-                new CarRepair { RepairDescryption = "WAwaria automatycznej skrzyni biegów.", RepairStartDate = new DateTime(2020, 11, 21, 12, 49, 00), RepairEndDate = new DateTime(2020, 11, 21, 18, 30, 00), ManHours = 5, Cost = 500, Car = cars[4], CarId = cars[4].Id, CarService = carServices[4], CarServiceId = carServices[4].Id }
+                new CarRepair { RepairDescryption = "WAwaria automatycznej skrzyni biegów.", RepairStartDate = new DateTime(2020, 11, 21, 12, 49, 00), RepairEndDate = new DateTime(2020, 11, 21, 18, 30, 00), ManHours = 5, Cost = 500, Car = cars[4], CarId = cars[4].Id, CarService = carServices[3], CarServiceId = carServices[3].Id }
             };
 
             carRepairs.ForEach(cr => context.CarRepairs.Add(cr));
