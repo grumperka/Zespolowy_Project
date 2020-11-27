@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -34,6 +35,8 @@ namespace Projekt_Zespolowy.Models
 
         [Required]
         public int CarId { get; set; }
+
+        [JsonIgnore]
         public virtual Car Car { get; set; }
 
 
