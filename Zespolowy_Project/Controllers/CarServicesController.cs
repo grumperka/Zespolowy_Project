@@ -8,6 +8,7 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using System.Web.Http.Description;
+using System.Web.Mvc;
 using Projekt_Zespolowy.Models;
 using Zespolowy_Project.DAL;
 
@@ -18,10 +19,21 @@ namespace Zespolowy_Project.Controllers
         private CarServiceContext db = new CarServiceContext();
 
         // GET: api/CarServices
-        public IQueryable<CarService> Get()
+      public IQueryable<CarService> Get() 
         {
             return db.CarServices;
-        }
+        }//get wygenerowany
+    
+
+        /* 
+        public IHttpActionResult GetCarServices()  
+        {
+            var carServicesList = db.CarServices.ToList();
+
+            return Ok(carServicesList);
+        }//metoda przejrzysta i krótka
+
+         */
 
         // GET: api/CarServices/5
         [ResponseType(typeof(CarService))]
